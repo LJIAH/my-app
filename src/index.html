@@ -3,12 +3,30 @@
 <head>
   <meta charset="utf-8">
   <title>MyApp</title>
-  <base href="/">
+  <base href="">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://bootswatch.com/3/cosmo/bootstrap.min.css">
+
+
+
+
 </head>
 <body>
   <app-root></app-root>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAc5baR016Rj4rAl7MKgQBpuAqWh0ft1HM",
+      authDomain: "angular2-a6834.firebaseapp.com",
+      databaseURL: "https://angular2-a6834.firebaseio.com",
+      projectId: "angular2-a6834",
+      storageBucket: "angular2-a6834.appspot.com",
+      messagingSenderId: "189765392703"
+    };
+    firebase.initializeApp(config);
+  </script>
 </body>
 </html>
